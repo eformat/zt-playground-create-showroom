@@ -11,9 +11,8 @@ content:
 
 ui:
   bundle:
-    url: https://github.com/rhpds/showroom-core/releases/latest/download/ui-bundle.zip
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: ./content/supplemental-ui
 
 output:
   dir: ./docs
