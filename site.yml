@@ -1,0 +1,19 @@
+site:
+  title: RHOAI Gen AI Studio Playground
+  start_page: playground-create::index.adoc
+  url: https://rhpds.github.io/zt-playground-create-showroom
+
+content:
+  sources:
+    - url: .
+      start_path: content
+      branches: HEAD
+
+ui:
+  bundle:
+    url: https://github.com/rhpds/showroom-core/releases/latest/download/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./content/supplemental-ui
+
+output:
+  dir: ./docs

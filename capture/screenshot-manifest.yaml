@@ -1,0 +1,55 @@
+workshop:
+  slug: playground-create
+  title: RHOAI Gen AI Studio Playground
+  product: rhai-2.16+
+
+shots:
+  - name: rhoai-home-projects
+    url: "{{ rhoai_dashboard_url }}"
+    output: content/modules/ROOT/assets/images/01-rhoai-home.png
+    caption: RHOAI dashboard Projects home page
+    wait_for:
+      - "getByText('Projects')"
+    steps: []
+
+  - name: playground-empty-state
+    url: "{{ rhoai_dashboard_url }}/gen-ai-studio/playground/{{ learner_project }}"
+    output: content/modules/ROOT/assets/images/02-playground-empty.png
+    caption: Playground empty state — Create your playground
+    wait_for:
+      - "getByText('Create your playground')"
+    steps: []
+
+  - name: configure-playground-modal
+    url: "{{ rhoai_dashboard_url }}/gen-ai-studio/playground/{{ learner_project }}"
+    output: content/modules/ROOT/assets/images/03-configure-modal.png
+    caption: Configure playground modal with model list
+    wait_for:
+      - "getByText('Available models')"
+    steps:
+      - click: "getByText('Create playground')"
+
+  - name: playground-active-model-tab
+    url: "{{ rhoai_dashboard_url }}/gen-ai-studio/playground/{{ learner_project }}"
+    output: content/modules/ROOT/assets/images/04-playground-model-tab.png
+    caption: Active Playground showing Configure Model tab
+    wait_for:
+      - "getByText('Temperature')"
+    steps: []
+
+  - name: playground-chat-response
+    url: "{{ rhoai_dashboard_url }}/gen-ai-studio/playground/{{ learner_project }}"
+    output: content/modules/ROOT/assets/images/05-chat-response-metrics.png
+    caption: Chat response with inference metrics expanded
+    wait_for:
+      - "getByText('TTFT')"
+    steps: []
+
+  - name: view-code-modal
+    url: "{{ rhoai_dashboard_url }}/gen-ai-studio/playground/{{ learner_project }}"
+    output: content/modules/ROOT/assets/images/06-view-code-modal.png
+    caption: View Code modal showing Llama Stack Python script
+    wait_for:
+      - "getByText('Playground configuration')"
+    steps:
+      - click: "getByText('View Code')"
