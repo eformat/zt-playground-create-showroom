@@ -1,14 +1,20 @@
+PORT ?= 8887
+DOCS_DIR := $(shell pwd)
+SITE_DIR := $(DOCS_DIR)/docs
+
 .PHONY: install build serve clean
 
 install:
-	npm install
+	cd $(DOCS_DIR) && npm install
 
 build: install
-	npm run build
-	touch docs/.nojekyll
+	rm -rf $(SITE_DIR)
+	cd $(DOCS_DIR) && npx antora site.yml --stacktrace
+	touch $(SITE_DIR)/.nojekyll
 
 serve: build
-	npm run serve
+	@echo "Serving at http://localhost:$(PORT)"
+	python3 -m http.server $(PORT) --directory $(SITE_DIR)
 
 clean:
-	rm -rf docs/ .cache/
+	rm -rf $(SITE_DIR)
