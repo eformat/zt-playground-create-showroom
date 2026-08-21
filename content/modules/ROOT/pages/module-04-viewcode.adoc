@@ -25,6 +25,8 @@ generated code is a Python script.
 
 ✔ The modal is open and shows numbered lines of Python code.
 
+image::13-view-code-modal.png[Playground configuration modal showing Llama Stack Python quickstart script labeled PYTHON,link=self,window=blank,width=700]
+
 == Exercise 2: Read the generated code
 
 Study the four key sections of the script:
@@ -63,6 +65,8 @@ every chat interaction you did in the UI has a direct Python API equivalent.
 
 ✔ You can identify all four callout elements in the script (import, client, model_name, responses.create).
 
+image::15-delete-dialog-confirmed.png[Delete playground dialog with User Mhepburn Project typed to confirm — Delete button active,link=self,window=blank,width=700]
+
 == Exercise 3: Close the modal and delete the Playground
 
 . Click the *✕* to close the View Code modal.
@@ -92,6 +96,8 @@ If the button does not become red/active, check your spelling.
 
 ✔ The Playground returns to the *"Create your playground"* empty state. The Playground
 and its chat history have been removed.
+
+image::16-playground-empty-after-delete.png[Playground empty state after deletion — Create your playground CTA returned,link=self,window=blank,width=700]
 
 ---
 

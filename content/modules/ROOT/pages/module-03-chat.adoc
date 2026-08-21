@@ -29,6 +29,8 @@ hi there
 ✔ The model replies (e.g., "Hi there! How can I help you today?") and the response
 appears progressively, not all at once.
 
+image::10-chat-first-response.png[First chat exchange — user sent "hi there", model replied with greeting and Show metrics link,link=self,window=blank,width=700]
+
 == Exercise 2: Read the inference metrics
 
 . Below (or above) the model response, look for a *Show metrics* link or metrics chips.
@@ -56,6 +58,8 @@ A low TTFT means users see output quickly even if the full response takes longer
 
 ✔ You can see all three metric values (response time, T, TTFT) for the message you just sent.
 
+image::11-chat-metrics-expanded.png[Inference metrics expanded showing response time in ms, token count T, and TTFT,link=self,window=blank,width=700]
+
 == Exercise 3: Send a follow-up message
 
 The Playground keeps conversation history. Send a follow-up to confirm context is maintained.
@@ -75,6 +79,8 @@ can you tell me why the sky is blue
 === Verify
 
 ✔ The model gives a complete, relevant answer. The chat history shows both turns.
+
+image::12-chat-second-response.png[Two-turn conversation showing both exchanges — "hi there" and sky is blue question with Rayleigh scattering response,link=self,window=blank,width=700]
 
 == Exercise 4: Observe the Compare chat button (optional)
 
