@@ -24,4 +24,4 @@ antora:
     - require: ./content/lib/inject-buttons.js
 
 output:
-  dir: ./docs
+  dir: ./www

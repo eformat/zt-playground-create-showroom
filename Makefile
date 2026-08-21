@@ -1,6 +1,6 @@
 PORT ?= 8887
 DOCS_DIR := $(shell pwd)
-SITE_DIR := $(DOCS_DIR)/docs
+SITE_DIR := $(DOCS_DIR)/www
 
 .PHONY: install build serve clean
 
