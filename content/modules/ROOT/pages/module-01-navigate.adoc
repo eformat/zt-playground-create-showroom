@@ -77,6 +77,3 @@ image::03-playground-project-selector.png[Project selector dropdown open showing
 
 image::04-playground-empty-state.png[Playground empty state — Create your playground CTA,link=self,window=blank,width=700]
 
----
-
-xref:module-02-create.adoc[Module 2: Create & Configure a Playground →]

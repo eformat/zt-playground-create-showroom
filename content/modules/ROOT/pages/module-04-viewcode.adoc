@@ -99,6 +99,3 @@ and its chat history have been removed.
 
 image::16-playground-empty-after-delete.png[Playground empty state after deletion — Create your playground CTA returned,link=self,window=blank,width=700]
 
----
-
-xref:module-05-summary.adoc[Summary & Next Steps →]

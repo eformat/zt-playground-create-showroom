@@ -108,6 +108,3 @@ image::08-playground-knowledge-tab.png[Configure Knowledge tab with RAG toggle O
 
 image::09-playground-mcp-tab.png[Configure MCP tab showing GitHub MCP Server with 0 active tools,link=self,window=blank,width=700]
 
----
-
-xref:module-03-chat.adoc[Module 3: Chat with a Model →]

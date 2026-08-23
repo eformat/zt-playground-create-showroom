@@ -47,4 +47,3 @@ RHOAI releases.
 
 == Let's get started
 
-xref:module-01-navigate.adoc[Module 1: Navigate to the Playground →]

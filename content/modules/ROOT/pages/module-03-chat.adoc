@@ -90,6 +90,3 @@ TIP: This feature lets you run the same prompt against two different models
 side-by-side to compare quality and speed. It is out of scope for this lab but
 worth noting for your own exploration.
 
----
-
-xref:module-04-viewcode.adoc[Module 4: View Code & Clean Up →]
