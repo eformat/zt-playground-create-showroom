@@ -7,6 +7,9 @@ nav:
 
 asciidoc:
   attributes:
+    source-highlighter: highlight.js
+    experimental: true
+    page-pagination: true
     lab_name: 'RHOAI Gen AI Studio Playground'
     user: 'user1'
     password: 'openshift'
